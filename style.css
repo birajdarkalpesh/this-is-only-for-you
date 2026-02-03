@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.container h2 {
+  color: white;
+  margin: 15px 0 30px;
+}
+
+.buttons {
+  position: relative;
+  width: 260px;
+  height: 180px;
+  margin: auto;
+}
+
+button {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+#yesBtn {
+  background: #ff2e63;
+  color: white;
+}
+
+#yesBtn:active {
+  transform: scale(1.15);
+}
+
+#noBtn {
+  background: white;
+  color: #ff2e63;
+  position: absolute;
+  left: 90px;
+  top: 80px;
+}
+
+/* Surprise section */
+#surprise {
+  position: absolute;
+  color: white;
+  animation: fadeIn 1s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Cartoon girl animation */
+.girl {
+  width: 160px;
+  animation: pop 1s ease infinite alternate;
+}
+
+@keyframes pop {
+  from { transform: translateY(0); }
+  to { transform: translateY(-15px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  font-size: 22px;
+  animation: floatUp 3s linear forwards;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-600px); opacity: 0; }
+}
