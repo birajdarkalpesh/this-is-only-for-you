@@ -96,3 +96,8 @@ button {
   from { transform: translateY(0); opacity: 1; }
   to { transform: translateY(-600px); opacity: 0; }
 }
+.girl {
+  width: 160px;
+  animation: pop 1s ease-in-out infinite alternate;
+  filter: drop-shadow(0 12px 25px rgba(0,0,0,0.35));
+}
